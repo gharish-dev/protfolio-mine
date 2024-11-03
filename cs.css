@@ -635,4 +635,42 @@ img{
 /* last  logo *
 <style>
   /* Container for text and background */
-  
+  @media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar in mobile view initially */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    .navbar li {
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar li:last-child {
+        border-bottom: none;
+    }
+
+    /* Style for the hamburger menu */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Desktop view (show navbar and hide menu icon) */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}

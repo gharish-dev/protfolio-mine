@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <!---header--->
+    <!---header
+    
     <header>
         <h2 class="logo"><img src="my-logo.png"></h2>
         <ul class="navbar">
@@ -33,7 +34,27 @@
             <li><a href="#achievement">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+    </header> -->
+    <header>
+        <h2 class="logo"><img src="my-logo.png"></h2>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#achievement">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+    
 
     <!---home--->
     <section class="home" id="home">
@@ -255,7 +276,7 @@
                         <h6> weather Application </h6>
                     </div>
                 </div>
-                <h1>Built a dynamic To-Do list application allowing users to add and remove activities upon completion.
+                <h1>I am build a real time weather application. we we see the current climate of the data.
                     </h3>
                     <a href="https://github.com/gharish-dev/javascipt-projects/tree/main/weather" class="button">Git hub</a>
 
